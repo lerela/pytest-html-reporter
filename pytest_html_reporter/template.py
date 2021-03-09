@@ -4,7 +4,7 @@ def html_template():
     <html lang="en">
         <head>
             <link href="https://i.imgur.com/UwGDzXn.png" rel="shortcut icon" type="image/x-icon" />
-            <title>Pytest HTML Reporter</title>
+            <title>__custom_title__</title>
             <meta charset="utf-8" />
             <meta content="width=device-width, initial-scale=1" name="viewport" />
             <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
@@ -507,7 +507,7 @@ def html_template():
                           <div>
                               <div class="card__header">
                                 <div class="header__title">
-                                  PYTEST REPORT
+                                __custom_title__
                                 </div>
                               </div>
                               <div class="card__header">

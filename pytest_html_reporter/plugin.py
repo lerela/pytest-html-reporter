@@ -616,6 +616,7 @@ class HTMLReporter(object):
     def renew_template_text(self, logo_url):
         template_text = html_template()
         template_text = template_text.replace("__custom_logo__", logo_url)
+        template_text = template_text.replace("__custom_title__", os.environ.get("PYTEST_TITLE", "Pytest Report"))
         template_text = template_text.replace("__execution_time__", str(round(_execution_time, 2)))
         # template_text = template_text.replace("__executed_by__", str(platform.uname()[1]))
         # template_text = template_text.replace("__os_name__", str(platform.uname()[0]))
